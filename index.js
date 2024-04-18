@@ -49,6 +49,6 @@ app.post('/api/teste', (req, res) => {
     console.dir(req.body)
     res.json('teste')
 })
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log('Server running on port 3000');
 });
